@@ -7,18 +7,18 @@
 //
 
 import Foundation
-//this will handle storing our games and all interactions with that array
+//this will handle storing all of our tasks
 class Libary {
     
-    // array for game projects
+    // array for tasks projects
     private var taskArray: [Task] = [Task(title:"this is where you add new tasks, "), Task(title:"add tasks when you need")]
   
-    //when we make a game we need the tittle, we also need user input, and we to add it to our game array, and a game object for the game.
+    //when we make a task we need the tittle of said task, we also need user input, and we to add it to our task array, and a gamtask object for the game.
     func addTask() {
-        //tell user to enter in a game title
+        //tell user to enter in a task that nedds to be completed
         print("please enter a task: ")
         
-        //we need uder input for the title
+        //we need user input for the title
         var newTaskName = readLine()
         
         while newTaskName == nil || newTaskName == "" {
@@ -34,7 +34,7 @@ class Libary {
         
         }
     }
-    //Removes a game from a libery
+    //Removes a task from a libery
     func removeTask() {
         for index in 2..<taskArray.count {
             print("\(index) \(taskArray[index].title)")
@@ -46,7 +46,7 @@ class Libary {
         }
         taskArray.remove(at: userInput!)
     }
-    // tells what games are currently in the libary array
+    // tells what tasks are currently in the libary array
     func listTask() {
         for task in taskArray {
             if task.checkedIn {
@@ -54,7 +54,7 @@ class Libary {
             }
         }
     }
-    //adds functionality to a list of games that are not avaible
+    //tells which tasks are not complete yet
     func listTaskNotCompleted() {
         for task in taskArray {
             if task.checkedIn == false {
@@ -63,7 +63,7 @@ class Libary {
             }
         }
     }
-    
+    //tells all the completed tasks
     func listTaskCompleted() {
         for index in 2..<taskArray.count {
             print("\(index). \(taskArray[index].title)")
@@ -74,7 +74,7 @@ class Libary {
             }
         }
     }
-    
+    //checks the task complete and moves it to the completed tasks list 
     func checkTaskComplete() {
         for index in 2..<taskArray.count {
             print("\(index). \(taskArray[index].title)")

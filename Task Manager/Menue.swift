@@ -36,7 +36,7 @@ Menu
             }
             handleInput(input)
         }            while !shouldQuit
-    }
+    }//calls on the functions in the Task Libary
     func handleInput(_ input: String) {
         switch input {
         case "1":
@@ -66,7 +66,7 @@ Menu
     
 }
 
-
+//
 func validateInput(_ input: String) -> Bool {
     let menuOptions = Array(1...8)
     guard let number = Int(input) else { return false}
