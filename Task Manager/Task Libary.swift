@@ -11,11 +11,10 @@ import Foundation
 class Libary {
     
     // array for game projects
-    private var taskArray: [Task] = [Task(title:"this is where you add the task you can add new tasks"), Task(title:"add tasks when you need")]
-    
+    private var taskArray: [Task] = [Task(title:"this is where you add new tasks, "), Task(title:"add tasks when you need")]
+  
+    //when we make a game we need the tittle, we also need user input, and we to add it to our game array, and a game object for the game.
     func addTask() {
-        //when we make a game we need the tittle, we also need user input, and we to add it to our game array, and a game object for the game.
-        
         //tell user to enter in a game title
         print("please enter a task: ")
         
@@ -30,14 +29,13 @@ class Libary {
         let newTask = Task(title: newTaskName!)
         taskArray.append(newTask)
         
-        for task in taskArray {
+        for newTask in taskArray {
             print(newTask.title)
         
         }
     }
-    
+    //Removes a game from a libery
     func removeTask() {
-        //Removes a game from a libery
         for index in 2..<taskArray.count {
             print("\(index) \(taskArray[index].title)")
         }
@@ -48,18 +46,16 @@ class Libary {
         }
         taskArray.remove(at: userInput!)
     }
-    
+    // tells what games are currently in the libary array
     func listTask() {
-        // tells what games are currently in the libary array
         for task in taskArray {
             if task.checkedIn {
                 print(task.title)
             }
         }
     }
-    
+    //adds functionality to a list of games that are not avaible
     func listTaskNotCompleted() {
-        //adds functionality to a list of games that are not avaible
         for task in taskArray {
             if task.checkedIn == false {
                 print("\(task.title) has not been completed")
