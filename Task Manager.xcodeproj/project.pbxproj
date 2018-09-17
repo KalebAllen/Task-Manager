@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B12B7BD2149639000D326D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B12B7BC2149639000D326D5 /* main.swift */; };
+		0B191E20215029B5000414C8 /* Start Up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B191E1F215029B5000414C8 /* Start Up.swift */; };
+		0B70743A214FEF5A0028AB5E /* Task Libary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B707439214FEF5A0028AB5E /* Task Libary.swift */; };
+		0B70743E214FEFFD0028AB5E /* Menue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B70743D214FEFFD0028AB5E /* Menue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		0B12B7B92149639000D326D5 /* Task Manager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Task Manager"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B12B7BC2149639000D326D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0B191E1F215029B5000414C8 /* Start Up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Start Up.swift"; sourceTree = "<group>"; };
+		0B707439214FEF5A0028AB5E /* Task Libary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task Libary.swift"; sourceTree = "<group>"; };
+		0B70743D214FEFFD0028AB5E /* Menue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				0B12B7BC2149639000D326D5 /* main.swift */,
+				0B191E1F215029B5000414C8 /* Start Up.swift */,
+				0B70743D214FEFFD0028AB5E /* Menue.swift */,
+				0B707439214FEF5A0028AB5E /* Task Libary.swift */,
 			);
 			path = "Task Manager";
 			sourceTree = "<group>";
@@ -119,6 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B191E20215029B5000414C8 /* Start Up.swift in Sources */,
+				0B70743E214FEFFD0028AB5E /* Menue.swift in Sources */,
+				0B70743A214FEF5A0028AB5E /* Task Libary.swift in Sources */,
 				0B12B7BD2149639000D326D5 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
