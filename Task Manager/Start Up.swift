@@ -8,7 +8,7 @@
 
 import Foundation
 class Task {
-    //store the title of a game
+    //store the title of the task
     var title: String
     
     var checkedIn = true

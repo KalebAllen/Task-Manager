@@ -1,15 +1,11 @@
-//
 //  Menue.swift
 //  Task Manager
-//
 //  Created by Kaleb Allen on 9/17/18.
 //  Copyright © 2018 Kaleb Allen. All rights reserved.
-//
 
 import Foundation
 
-import Foundation
-//Menu
+//Menu function 
 class Menu {
     let libary = Libary()
     var shouldQuit = false
@@ -66,14 +62,14 @@ Menu
     
 }
 
-//
+//this function impliments the menu options
 func validateInput(_ input: String) -> Bool {
     let menuOptions = Array(1...8)
     guard let number = Int(input) else { return false}
     return menuOptions.contains(number)
 }
 
-
+//makes sure that the users input does not have white spaces 
 func getInput() -> String {
     var input: String? = nil
     

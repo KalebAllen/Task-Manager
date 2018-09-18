@@ -7,6 +7,7 @@
 //
 
 import Foundation
+// this function starts the entire program
 print("welcome to ypur task manager")
 let menu = Menu()
 menu.go()
