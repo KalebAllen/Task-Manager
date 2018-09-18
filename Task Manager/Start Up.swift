@@ -17,4 +17,3 @@ class Task {
         self.title = title
     }
 }
-

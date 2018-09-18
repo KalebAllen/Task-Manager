@@ -1,10 +1,7 @@
-//
 //  Task Libary.swift
 //  Task Manager
-//
 //  Created by Kaleb Allen on 9/17/18.
 //  Copyright © 2018 Kaleb Allen. All rights reserved.
-//
 
 import Foundation
 //this will handle storing all of our tasks
@@ -12,7 +9,7 @@ class Libary {
     
     // array for tasks projects
     private var taskArray: [Task] = [Task(title:"this is where you add new tasks, "), Task(title:"add tasks when you need")]
-  
+    
     //when we make a task we need the tittle of said task, we also need user input, and we to add it to our task array, and a gamtask object for the game.
     func addTask() {
         //tell user to enter in a task that nedds to be completed
@@ -31,12 +28,12 @@ class Libary {
         
         for newTask in taskArray {
             print(newTask.title)
-        
         }
     }
+    
     //Removes a task from a libery
     func removeTask() {
-        for index in 2..<taskArray.count {
+        for index in 1..<taskArray.count {
             print("\(index) \(taskArray[index].title)")
         }
         var userInput = Int(readLine()!)
@@ -87,4 +84,6 @@ class Libary {
         }
     }
 }
+
+
 
